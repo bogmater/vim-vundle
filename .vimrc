@@ -8,6 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'ctrpvim/ctrlp.vim'
+Plugin 'tobyS/vmustache'
 Plugin 'tobyS/pdv'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'vim-airline/vim-airline'
@@ -23,6 +24,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'honza/vim-snippets'
 Plugin 'godlygeek/tabular'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 
@@ -69,7 +71,7 @@ let g:airline_powerline_fonts = 1
 
 " syntastic PHP
 let g:syntastic_php_checkers      = ['php', 'phpmd']
-let g:syntastic_haskell_checkers  = ['ghc-mod', 'hlint']
+" let g:syntastic_haskell_checkers  = ['ghc-mod', 'hlint']
 
 " php documentor
 let g:pdv_template_dir = $HOME ."/.vim/bundle/pdv/templates_snip"
@@ -83,10 +85,8 @@ let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 " don't match <> in .php files
 au FileType php let b:delimitMate_matchpairs = "(:),[:],{:}"
 
-" phpcomplete
-" set completeopt=longest,menuone,preview
-" let g:EclimCompletionMethod = 'omnifunc'
-" let g:EclimPhpValidate = 0
+"" phpcomplete
+set completeopt=longest,menuone
 
 " ycm semantic triggers
 let g:ycm_semantic_triggers =  {
