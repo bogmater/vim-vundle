@@ -37,7 +37,7 @@ set nu
 colorscheme seoul256
 
 " tab stuff
-set expandtab ts=2 sw=2 ai
+set expandtab ts=4 sw=4 ai
 
 " reselect visual block after indent/outdent
 vnoremap < <gv
@@ -85,7 +85,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 " don't match <> in .php files
 au FileType php let b:delimitMate_matchpairs = "(:),[:],{:}"
 
-"" phpcomplete
+" phpcomplete
 set completeopt=longest,menuone
 
 " ycm semantic triggers
